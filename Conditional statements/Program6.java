@@ -8,11 +8,13 @@ public class Program6 {
 		System.out.println("enter number");
 		double d=s.nextDouble();
 		s.close();
-		int a=(int)d;
-		if (d%10>5 || d%10<=9) {
-			a=a+1;
+		if (d%1>=0.5) {
+			int ceil=(int)d+1;
+			System.out.println(ceil);
+		} else {
+			int floor=(int)d;
+			System.out.println(floor);
 		}
-		System.out.println(a);
 	}
 
 }
